@@ -1,8 +1,38 @@
-
-
 <html>
+    <head>
+        <title>Clique Flor</title>
+        <style>
+            body{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            canvas{
+                display: block;
+                margin: auto;
+            }
+
+            span{
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                padding: 10px;
+                border-radius: 5px;
+                background-color: aquamarine;
+            }
+
+            img{
+                position: fixed;
+                bottom: 5px;
+                right: 5px;
+            }
+        </style>
+    </head>
     <body>
         <canvas width="600" height="400"></canvas>
+        <div><span>Clique na tela para colocar uma flor :D</span></div>
+        
+        <img src="herrscher-of-sentience-fu-hua.gif" alt="Yatta">
         <script>
             var tela = document.querySelector('canvas');
             var pincel = tela.getContext('2d');
